@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona z dźwiękiem</title>
+    <title>Daria Stołek-Popiołek</title>
     <style>
         body {
             display: flex;
@@ -50,10 +50,10 @@
     <audio id="background-audio" src="buu.mp3" loop></audio>
 
     <script>
-        // Funkcja aktywująca dźwięk po pierwszym kliknięciu użytkownika
+        // 
         window.addEventListener('click', function() {
             const audio = document.getElementById('background-audio');
-            // Sprawdzamy, czy audio już gra, żeby nie odpalać go na nowo przy każdym kliknięciu
+            // 
             if (audio.paused) {
                 audio.play().catch(function(error) {
                     console.log("Autoplay zablokowany przez przeglądarkę:", error);
